@@ -129,32 +129,32 @@ document.addEventListener("DOMContentLoaded", function() {
     const img = document.querySelector('.inf .flex-mak img');
     const infot = document.querySelector('.inf .infot');
     if (img.src.includes('golf7')) {
-        img.src = "/projekt1 img/audia4.jfif";
+        img.src = "audia4.jfif";
         infot.innerHTML = `
         <li>Audi A4 Automatic <strong class="leku">50 €</strong></li>
         <li>Audi A4 + Full Casco <strong class="leku">80 €</strong></li>`;
     } else if (img.src.includes('toyota')) {
-        img.src = "/projekt1 img/golf7.jfif";
+        img.src = "golf7.jfif";
         infot.innerHTML = `
         <li>Wolkswagen Golf Mk6 Automatic <strong class="leku">30 €</strong></li>
         <li>Wolkswagen Golf Mk6 + Full Casco <strong class="leku">60 €</strong></li>`;
     } else if (img.src.includes('golf+')) {
-        img.src = "/projekt1 img/toyota.jfif";
+        img.src = "toyota.jfif";
         infot.innerHTML = `
         <li>Toyota Auris Manual <strong class="leku">25 €</strong></li>
         <li>Toyota Auris + Full casco <strong class="leku">50 €</strong></li>`;
     } else if (img.src.includes('audia3')) {
-        img.src = "/projekt1 img/golf+.jpg";
+        img.src = "golf+.jpg";
         infot.innerHTML = `
         <li>Wolkswagen Golf Plus Automatic <strong class="leku">30 €</strong></li>
         <li>Wolkswagen Golf Plus + Full Casco <strong class="leku">60 €</strong></li>`;
     } else if (img.src.includes('golf5')) {
-        img.src = "/projekt1 img/audia3.jfif";
+        img.src = "audia3.jfif";
         infot.innerHTML = `
         <li>Audi A3 Automatic <strong class="leku">30 €</strong></li>
         <li>Audi A3 + Full Casco <strong class="leku">60 €</strong></li>`;
     } else if (img.src.includes('audia4')) {
-        img.src = "/projekt1 img/golf5.jfif";
+        img.src = "golf5.jfif";
         infot.innerHTML = `
         <li>Wolkswagen Golf Mk5 Manual <strong class="leku">25 €</strong></li>
         <li>Wolkswagen Golf Mk5 + Full Casco <strong class="leku">50 €</strong></li>`;
@@ -165,32 +165,32 @@ function next(){
   const img = document.querySelector('.inf .flex-mak img');
   const infot = document.querySelector('.inf .infot');
   if (img.src.includes('golf7')){
-img.src = "/projekt1 img/toyota.jfif";
+img.src = "toyota.jfif";
 infot.innerHTML = `
   <li>Toyota Auris Manual <strong class="leku">25 €</strong></li>
   <li>Toyota Auris + Full casco <strong class="leku">50 €</strong></li>`;
 } else if (img.src.includes('toyota')) {
-img.src = "/projekt1 img/golf+.jpg";
+img.src = "golf+.jpg";
 infot.innerHTML = `
   <li>Wolkswagen Golf Plus Automatic <strong class="leku">30 €</strong></li>
   <li>Wolkswagen Golf Plus + Full Casco <strong class="leku">60 €</strong></li>`;
 } else if (img.src.includes('golf+')) {
-img.src = "/projekt1 img/audia3.jfif";
+img.src = "audia3.jfif";
 infot.innerHTML = `
   <li>Audi A3 Automatic <strong class="leku">30 €</strong></li>
   <li>Audi A3 + Full Casco <strong class="leku">60 €</strong></li>`;
 } else if (img.src.includes('audia3')) {
-img.src = "/projekt1 img/golf5.jfif";
+img.src = "golf5.jfif";
 infot.innerHTML = `
   <li>Wolkswagen Golf Mk5 Manual <strong class="leku">25 €</strong></li>
   <li>Wolkswagen Golf Mk5 + Full Casco <strong class="leku">50 €</strong></li>`;
 } else if (img.src.includes('golf5')) {
-img.src = "/projekt1 img/audia4.jfif";
+img.src = "audia4.jfif";
 infot.innerHTML = `
   <li>Audi A4 Automatic <strong class="leku">50 €</strong></li>
   <li>Audi A4 + Full Casco <strong class="leku">80 €</strong></li>`;
 } else if (img.src.includes('audia4')) {
-img.src = "/projekt1 img/golf7.jfif";
+img.src = "golf7.jfif";
 infot.innerHTML = `
   <li>Wolkswagen Golf Mk6 Automatic <strong class="leku">30 €</strong></li>
   <li>Wolkswagen Golf Mk6 + Full Casco <strong class="leku">60 €</strong></li>`;
