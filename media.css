@@ -19,6 +19,9 @@
         text-align: center;
         width: 30%;
     }
+    strong.leku{
+        font-size:smaller;
+    }
     li{
         font-size: smaller;
     }
