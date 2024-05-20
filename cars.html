@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projekt1 css/makina.css">
+    <link rel="icon" href="/projekt1 img/lambo.jfif">
+    <link rel="stylesheet" href="/projekt1 css/media.css">
+    <script src="makina.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Choose a car</title>
+</head>
+<body class="body1">
+    <div class="container1">
+        <img src="/projekt1 img/lambo.jfif" class="titulli"></img>
+        <div class="tit">Car Rental Tirana Airport</div>
+        <div class="pages">
+            <div class="nje">
+                <a href="index.html" class="tet">Home</a>
+                <a href="cars.html" class="tet">Cars</a>
+            </div>
+        </div>
+    </div>
+    <div class="permb">
+        <div class="text-cont">
+            <div class="text-cont1">
+            <div class="text-header">Set the dates</div>
+            <div class="reminder">The Pick Up Location is right outside the Airport </div>
+                <div class="select">Period of Rental</div>
+                <center>
+                <div class="cal" onclick="datat()">
+                    <p class="show" id="show" name="show">Dates</p><div class="border"></div>
+                </div>
+                    <div class="tregoj">
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                            <div id="prevMonth">&lt;</div>
+                            <div id="currentMonth"></div>
+                            <div id="nextMonth">&gt;</div>
+                            </div>
+                            <div id="calendar"></div>
+                    </div>
+                    </div>
+                </center>
+                <div class="select-cont">
+                <div class="select1">Pick up Time</div><div class="select2">Drop off Time</div>
+                </div>
+                <div class="cal-cont">
+                <select class="cal1" id="cal1" name="cal1">
+                    <option>00:00</option>
+                    <option>01:00</option>
+                    <option>02:00</option>
+                    <option>03:00</option>
+                    <option>04:00</option>
+                    <option>05:00</option>
+                    <option>06:00</option>
+                    <option>07:00</option>
+                    <option>08:00</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                    <option>22:00</option>
+                    <option>23:00</option>
+                </select>
+                <select class="cal1" id="cal1" name="cal1">
+                    <option>00:00</option>
+                    <option>01:00</option>
+                    <option>02:00</option>
+                    <option>03:00</option>
+                    <option>04:00</option>
+                    <option>05:00</option>
+                    <option>06:00</option>
+                    <option>07:00</option>
+                    <option>08:00</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                    <option>22:00</option>
+                    <option>23:00</option>
+                </select>
+            </div></div>
+        </div><hr class="sep">
+    <div class="img-cont1">
+        <div class="mak-img">
+            <div class="padd">
+            <div class="button-cont">
+                <div class="arrleft" onclick="back()"></div>
+                    <button class="shik" onclick="showDiv()">Choose</button>
+                <div class="arrright" onclick="next()"></div>   
+        </div>
+        <div class="inf">
+            <div class="flex-mak">
+            <img src="/projekt1 img/golf7.jfif" class="golfat">
+            </div>
+        <div class="infot">
+            <li>Wolkswagen Golf Mk6 Automatic <strong class="leku">30 €</strong></li>
+            <li>Wolkswagen Golf Mk6 + Full Casco <strong class="leku">60 €</strong></li>
+        </div></div>
+    </div></div></div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h1 style="text-align: center; color: white;">Contact us</h1>
+            <input placeholder="Name" class="emri" onkeydown="Enter(event)" id="emri" name="emri" required>
+            <input placeholder="Surname" class="mbiemri" onkeydown="Enter(event)" id="mbiemri" name="mbiemri" required>
+            <input placeholder="Email" class="emaili" onkeydown="Enter(event)" id="emaili" name="emaili" required>
+            <input placeholder="Notes" class="notes" onkeydown="Enter(event)" id="notes" name="notes" required>
+            <button class="close" onclick="closepop()"><strong>Send email</strong></button>
+        </div>
+    </div></div>
+    <a href="whatsapp://send?phone=+355682405123">
+        <img src="/projekt1 img/whats.png" class="wapp">
+    </a>
+</body>
+</html> 
