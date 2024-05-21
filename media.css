@@ -11,7 +11,7 @@
     img.titulli{
         width: 40%;
         margin-right: 20px;
-        margin-left: -10px;
+        margin-left: 10px;
     }
     div.tit{
         display: none;
@@ -25,7 +25,7 @@
     div.nje{
         gap: 12px;
         padding: 0;
-        margin-right: 15px;
+        margin-right: 25px;
     }
     hr.sep{ 
         display: none;
