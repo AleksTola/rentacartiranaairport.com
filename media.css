@@ -73,10 +73,9 @@
     div.popup{
         width: 80%;
     }
-    div.gap{
-        background-color: none;
+    div.terms{
+        background-color:none;
     }
-
 } 
 @media screen and (min-width: 300px) and (max-width: 370px){
     div.gap{
