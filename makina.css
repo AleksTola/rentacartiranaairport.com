@@ -474,7 +474,6 @@ option{
     display: flex;
     margin-top: 30px;
     justify-content: space-evenly;
-    background-color: rgb(165, 162, 162);
 }
 @keyframes fade-out {
     100%{opacity: 0;}
