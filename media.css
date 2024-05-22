@@ -5,8 +5,14 @@
     div.text-cont{
         width: 100%;
     }
+    div.container{
+        border-radius: 20px;
+    }
     select.cal1{
         margin-bottom: 20px;
+    }
+    strong.tick{
+        color: green;
     }
     img.titulli{
         width: 40%;
