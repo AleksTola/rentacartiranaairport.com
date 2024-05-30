@@ -2,11 +2,43 @@
     div.permb{
         flex-direction: column;
     }
+    div.mak-img{
+        flex-direction: column;
+    }
+    div.mak-img1{
+        flex-direction: column;
+    }
+    p.leku{
+        color:rgb(1, 71, 1);
+    }
+    img.golfat{
+        width: 90%;
+        margin-left: 20px;
+    }
+    p.porosit1{
+        text-align: center;
+        margin: 0;
+    }
+    div.bord{
+        float: inline-end;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    li{
+        color: #000000;
+    }
+    div.makinat1{
+        flex-direction: column;
+        margin: 0;
+    }
     div.text-cont{
         width: 100%;
     }
     div.container{
         border-radius: 20px;
+    }
+    div.container1{
+        gap: 0px;
     }
     select.cal1{
         margin-bottom: 20px;
@@ -25,13 +57,10 @@
     strong.leku{
         font-size: 15px;
     }
-    li{
-        font-size: smaller;
-    }
     div.nje{
         gap: 12px;
         padding: 0;
-        margin-right: 25px;
+        margin-right: 45px;
     }
     hr.sep{ 
         display: none;
@@ -103,6 +132,12 @@
     div.background1{
         background-size: 100% 100%;
     }
+    div.makinat1{
+        flex-direction: column;
+    }
+    div.tit{
+        display: none;
+    }
     div.background{
         background-image: none;
         box-shadow: none;
@@ -150,5 +185,12 @@ hr.sep{
     }
     select.cal1{
         margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    div.permb{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
