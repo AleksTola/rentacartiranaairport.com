@@ -8,6 +8,23 @@
     div.mak-img1{
         flex-direction: column;
     }
+    #popup{
+        top: 30%;
+        left: 50%;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h2{
+        margin-top: 5px;
+    }
+    #popup1{
+        top: 78.5%;
+        left: 50%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 80%;
+    }
     p.leku{
         color:rgb(1, 71, 1);
     }
@@ -192,5 +209,32 @@ hr.sep{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 800px){
+    #popup{
+        top: 30%;
+        left: 50%;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h2{
+        margin-top: 5px;
+    }
+    #popup1{
+        top: 78.5%;
+        left: 50%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    #popup1{
+        top: 50%;
+        left: 77%;
+    }
+    #popup{top: 50%;
+        left: 30%;
     }
 }
