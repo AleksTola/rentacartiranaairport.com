@@ -75,7 +75,7 @@ body{
     color: rgb(136, 7, 7);
 }
 .background{
-    background-image: url(/projekt1\ img/audi.jpg);
+    background-image: url(audi.jpg);
     background-size: 50% 110%;
     background-repeat: no-repeat;
     height: 500px;
@@ -91,7 +91,7 @@ body{
         ); 
 }
 .background1{
-    background-image: url(/projekt1\ img/benz.jfif);
+    background-image: url(benz.jfif);
     background-repeat: no-repeat;
     background-size: 50% 100%;
 }
