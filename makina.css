@@ -75,7 +75,7 @@ body{
     color: rgb(136, 7, 7);
 }
 .background{
-    background-image: url(audi.jpg);
+    background-image: url(/projekt1\ img/audi.jpg);
     background-size: 50% 110%;
     background-repeat: no-repeat;
     height: 500px;
@@ -91,7 +91,7 @@ body{
         ); 
 }
 .background1{
-    background-image: url(benz.jfif);
+    background-image: url(/projekt1\ img/benz.jfif);
     background-repeat: no-repeat;
     background-size: 50% 100%;
 }
@@ -171,16 +171,19 @@ body{
     transition: 1.5s;
 }
 .permb{
+    margin-top: 120px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 120px;
+    gap: 8%;
+}
+.makinat2{
+    display: flex;
+    justify-content: center;
 }
 .text-cont{
     width: 30%;
-    padding-top: 23px;
-    border-radius: 20px;
     margin: 10px 0px 10px 0px;
-    border:solid;
+    flex: 0.6;
 }
 .tekst{
     font-size: 35px;
@@ -230,6 +233,7 @@ body{
 }
 .cal-cont{
     display: flex;
+    margin-bottom: 25px;
     justify-content: space-evenly;
 }
 .cal{
@@ -264,9 +268,9 @@ body{
     margin-left: 5px;
     font-size: 17px;
     background-color: transparent;
-    cursor: pointer;
     border: none;
     width: 100%;
+    cursor: pointer;
 }
 .show:hover{
     opacity: 0.8;
@@ -288,13 +292,13 @@ body{
     font-family: Arial, sans-serif;
     display: none;
   }
-  
   .calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(132, 16, 16);
     height: 30px;
+    margin-top: 15px;
   }
   
   #calendar {
@@ -307,22 +311,28 @@ body{
     cursor: pointer;
     margin-left: 5px;
 }
-    #nextMonth{
-        font-weight: bolder;
+#nextMonth{
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 5px;
+}
+    #calendar div {
+        border: 1px solid #ccc;
+        padding: 3.5px;
+        text-align: center;
         cursor: pointer;
-        margin-right: 5px;
-    }
-  #calendar div {
-    border: 1px solid #ccc;
-    padding: 3.5px;
-    text-align: center;
-  }
+      }
+      #calendar div:hover{
+        opacity: 0.7;
+      }
   
   #calendar .day-header {
     font-weight: bold;
   }
-  .days{
-    cursor: pointer;
+
+  .je{
+    line-height: 25px;
+    font-size: 12px;
   }
 option{
     font-size: 15px;
@@ -341,34 +351,45 @@ option{
     font-size: 25px;
     vertical-align: middle;
 }
-.padd{
-    margin: 15px;
-}
-.img-cont1{
-    vertical-align: top;
-    border: solid;
-    margin: 10px 0px 10px 0px;
-    border-radius: 20px;
-}
-.button-cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.makinat{
+    display:block;
+    float: inline-end;
     margin-top: 20px;
 }
-.arrleft{
-    height: 25px;
-    width: 27px;
-    border-top: 8px solid black;
-    border-left: 8px solid black;
-    transform: rotate(-50deg);
+.mak-img{
+   display: flex;
+   margin-top: 10px;
 }
-.arrleft:hover{
-    opacity: 0.8;
-    cursor: pointer;
+.mak-img1{
+    display: flex;
+    align-items: top;
 }
-.arrleft:active{
-    opacity: 0.5;
+.makinat1{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.golfat{  
+    width: 100%;
+    max-width: 400px;
+    max-height: 250px;
+    border-radius: 15px;
+}
+.emri-mak{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    width: max-content;
+    margin-top: 15px;
+}
+.infot{
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 15px;
+    color: rgb(98, 88, 88);
 }
 .shik{
     border-radius: 15px;
@@ -382,58 +403,73 @@ option{
     font-size: 15px;
     color:black;
     font-style: italic;
-    background-color: transparent;
+    
 }
-.shik:hover{
-    box-shadow: 10px 10px 15px black;
-    opacity: 0.8;
+.porosit{
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    padding: 1px 6px 0px 0px;
+}
+.porosit1{
+    margin: 0px 85px 0px 0px;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    padding: 1px 6px 0px 0px;
+}
+.leku:hover{
+    opacity: 0.6;
     cursor: pointer;
-    background-color: darkgreen;
-    transition: 0.5s;
 }
-.shik:active{
+.leku:active{
     opacity: 0.5;
     transition: 0s;
 }
-.arrright{
-    height: 25px;
-    width: 27px;
-    border-bottom: 8px solid black;
-    border-right: 8px solid black;
-    transform: rotate(-48deg);   
-}
-.arrright:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-.arrright:active{
-    opacity: 0.5;
-}
-.mak-img{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 450px;
-}
-.golfat{
-    margin-top: 25px;  
-    width: 100%;
-}
 .leku{
     color: green;
-    font-size: 25px;
-    float: right;
-}
-.infot{
+    font-weight: bold;
     font-size: 20px;
+    width: max-content;
+    margin: 3px;
+    background-color: transparent;
+    border: none;
+}  
+.infot1{
+    font-size: 17px;
     line-height: 30px;
+    margin-left: 15px;
+    color: rgb(65, 60, 60);
+} 
+.leku1{
+    color: rgb(1, 98, 1);
+    font-weight: bold;
+    font-size: 20px;
+    width: max-content;
+    margin: 3px;
+}  
+.siguracion{
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: solid;
+    display: inline-block;
 }
-
+.bord{
+    color: black;
+    border-radius: 15px;
+    border-width: 2.5px;
+    border: solid;
+    margin-top: 13px;
+    width: fit-content;
+}
 .popup {
     display: none;
     position: fixed;
-    top: 40%;
-    left: 49%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
     padding:20px;
@@ -478,11 +514,7 @@ option{
 @keyframes fade-out {
     100%{opacity: 0;}
 }
-.bye{
-    animation: fade-out 3s;
-    visibility: hidden;
-    transition: 3s;
-}
+
 .marketing{
     font-size: 12px;
     text-align: right;
@@ -539,22 +571,73 @@ input{
     margin-top: 12px;
 }
 
-#overlay {
-    top: 10%;
-    width: fit-content;
-    background-color: transparent;
-    z-index: 999;
-    display: none;
-    transition: opacity 1.5s;
-}
-
 .popup.show {
     display: block;
     opacity: 0.9;
     background-color: rgb(31, 102, 125);
 }
-
-#overlay.show {
+.spost{
+    left: 35%;
+}
+.popup1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(31, 102, 125);
+    padding:20px;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.duku{
     display: block;
-    opacity: 1;
+}
+.bye{
+    animation: fade-out 3s;
+    visibility: hidden;
+    transition: 3s;
+}
+
+.note {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #993308;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    max-width: 90%;
+    animation: fadeInOut 6s ease-in-out forwards;
+}
+.note p {
+    margin: 10px 0;
+}
+.note p:first-of-type {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+.note p:last-of-type {
+    font-size: 20px;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
