@@ -2,6 +2,19 @@
     div.permb{
         flex-direction: column;
     }
+    input.emri{
+        height: 20px;
+    }
+    input.mbiemri{
+        height: 20px
+    }
+    input.emaili{
+        height: 20px
+    }
+    input.notes{
+        margin-top: 10px;
+        height: 30px
+    }
     div.mak-img{
         flex-direction: column;
     }
