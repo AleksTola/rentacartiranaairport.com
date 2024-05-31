@@ -456,6 +456,8 @@ option{
     background-color: transparent;
     border: solid;
     display: inline-block;
+    border-color: black;
+    color: black;
 }
 .bord{
     color: black;
@@ -548,7 +550,7 @@ option{
 }
 .notes{
     margin-top: 20px;
-    height: 50px;
+    height: 40px;
 }
 input{
     border-radius: 5px;
@@ -561,13 +563,13 @@ input{
 }
 .emaili{
     margin-top: 12px;
-    height: 25px;
+    height: 20px;
 }
 .emri{
-    height: 25px;
+    height: 20px;
 }
 .mbiemri{
-    height: 25px;
+    height: 20px;
     margin-top: 12px;
 }
 
