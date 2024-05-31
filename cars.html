@@ -188,11 +188,11 @@
             <p>Every border pass has a 50 € charge.</p>
             <p>Will you pass the border?
                 <select style="margin-left: 15px; background-color: transparent;
-            border: solid; font-weight: bold; border-color: black;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
+            border: solid; font-weight: bold; border-color: black; color: black;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
             <h2 style="text-align: center; color: white;">Drivers Number</h2>
             <p style="text-align: center;">Additional driver : 3€ / day per person</p>
             <center><select style="width: 150px; background-color: transparent;
-            border: solid; border-color: black; text-align: center;" id="additionalDrivers" onchange="updateTotalPrice()">
+            border: solid; border-color: black; text-align: center; color: black;" id="additionalDrivers" onchange="updateTotalPrice()">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -218,14 +218,16 @@
             font-weight: bold;
             width: 100px;
             height: 30px;
-            border: solid;"
+            border: solid;
+            border-color: black;
+            color: black;"
             onclick="change()" id="next">Next</button>
             </div>
         </div>
     </div>
     <div id="popup1" class="popup1">
-        <h1>Total Price: <strong id="totalPrice" style="color:green;"></strong></h1>
-            <h1 style="text-align: center; color: white; margin-top: 0px;">Order</h1>
+        <h3>Total Price: <strong id="totalPrice" style="color:green;"></strong></h3>
+            <h3 style="text-align: center; color: white; margin-top: 0px;">Order</h3>
             <input placeholder="Name" class="emri" id="emri" name="emri" onkeydown="Enter(event)">
             <input placeholder="Surname" class="mbiemri" id="mbiemri" name="mbiemri" onkeydown="Enter(event)">
             <input placeholder="Email" class="emaili" id="emaili" name="emaili" onkeydown="Enter(event)">
