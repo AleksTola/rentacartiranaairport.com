@@ -10,6 +10,7 @@ body{
 .vendi{
     width: 70%;
     float: inline-end;
+    margin: 0;
 }
 .container{
     display: flex;
