@@ -7,7 +7,10 @@ body{
             #f5f8fa
         ); 
 }
-
+.vendi{
+    width: 70%;
+    float: inline-end;
+}
 .container{
     display: flex;
     align-items: center;
