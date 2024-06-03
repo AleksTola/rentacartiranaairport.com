@@ -98,6 +98,16 @@
                 </select>
                 </div>
             </div>
+            <div class="vendi">
+            <select style="background-color: transparent; border: solid;
+            border-color: black;
+            color: black;
+            font-weight: bold;" id="location" onchange="updateTotalPrice()">
+                <option value="Airport">Airport (Free)</option>
+                <option value="Tirana">Tirana downtown (40 €)</option>
+                <option value="Saranda">Saranda (200 €)</option>
+            </select>
+        </div>
         </div>
         <div class="makinat">
             <div class="mak-img">
@@ -105,7 +115,7 @@
                 <div class="infot">
                     <p class="emri-mak">Volkswagen Golf Mk5</p>
                     <li>Manual</li>
-                    <li>4 Doors</li>
+                    <li>5 Doors</li>
                     <li>4L/100Km</li>
                     <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf5')">Price: <strong id="golf5Price">25</strong> €</p></div>
                     <p class="porosit1">Order now</p>
@@ -120,7 +130,7 @@
                 <div class="infot1">
                     <p class="emri-mak">Toyota Auris</p>
                     <li>Manual</li>
-                    <li>4 Doors</li>
+                    <li>5 Doors</li>
                     <li>4L/100Km</li>
                     <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('toyota')">Price: <strong id="toyotaPrice">25</strong> €</p></div>
                     <p class="porosit">Order now</p>
@@ -132,7 +142,7 @@
                     <div class="infot">
                         <p class="emri-mak">Audi A3</p>
                         <li>Automatic</li>
-                        <li>4 Doors</li>
+                        <li>5 Doors</li>
                         <li>6L/100Km</li>
                         <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('A3')">Price: <strong id="A3Price">30</strong> €</p></div>
                         <p class="porosit">Order now</p>
@@ -148,7 +158,7 @@
                 <div class="infot1">
                     <p class="emri-mak">Audi A4</p>
                     <li>Automatic</li>
-                    <li>4 Doors</li>
+                    <li>5 Doors</li>
                     <li>8L/100Km</li>
                     <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('A4')">Price: <strong id="A4Price">50</strong> €</p></div>
                     <p class="porosit">Order now</p>
@@ -160,7 +170,7 @@
                     <div class="infot">
                         <p class="emri-mak">Golf Plus</p>
                         <li>Automatic</li>
-                        <li>4 Doors</li>
+                        <li>5 Doors</li>
                         <li>7L/100Km</li>
                         <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf+')">Price: <strong id="golf+Price">30</strong> €</p></div>
                         <p class="porosit">Order now</p>
@@ -174,7 +184,7 @@
                 <div class="infot">
                     <p class="emri-mak">Volkswagen Golf Mk6</p>
                     <li>Automatic</li>
-                    <li>4 Doors</li>
+                    <li>5 Doors</li>
                     <li>5L/100Km</li>
                     <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf6')">Price: <strong id="golf6Price">30</strong> €</p></div>
                     <p class="porosit1">Order now</p>
@@ -188,11 +198,11 @@
             <p>Every border pass has a 50 € charge.</p>
             <p>Will you pass the border?
                 <select style="margin-left: 15px; background-color: transparent;
-            border: solid; font-weight: bold; border-color: black; color: black;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
+            border: solid; font-weight: bold;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
             <h2 style="text-align: center; color: white;">Drivers Number</h2>
             <p style="text-align: center;">Additional driver : 3€ / day per person</p>
             <center><select style="width: 150px; background-color: transparent;
-            border: solid; border-color: black; text-align: center; color: black;" id="additionalDrivers" onchange="updateTotalPrice()">
+            border: solid;" id="additionalDrivers" onchange="updateTotalPrice()">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -211,23 +221,21 @@
             align-items: center;">
             <select class="siguracion" id="siguracion" name="siguracion" onchange="updateTotalPrice()">
                 <option value="normal">Normal</option>
-                <option value="80">80% Casco</option>
-                <option value="100">100% Casco</option>
+                <option value="80%">80% Casco</option>
+                <option value="100%">100% Casco</option>
             </select>
             <button style="background-color: orange;
             font-weight: bold;
             width: 100px;
             height: 30px;
-            border: solid;
-            border-color: black;
-            color: black;"
+            border: solid;"
             onclick="change()" id="next">Next</button>
             </div>
         </div>
     </div>
     <div id="popup1" class="popup1">
-        <h3>Total Price: <strong id="totalPrice" style="color:green;"></strong></h3>
-            <h3 style="text-align: center; color: white; margin-top: 0px;">Order</h3>
+        <h1>Total Price: <strong id="totalPrice" style="color:green;"></strong></h1>
+            <h1 style="text-align: center; color: white; margin-top: 0px;">Order</h1>
             <input placeholder="Name" class="emri" id="emri" name="emri" onkeydown="Enter(event)">
             <input placeholder="Surname" class="mbiemri" id="mbiemri" name="mbiemri" onkeydown="Enter(event)">
             <input placeholder="Email" class="emaili" id="emaili" name="emaili" onkeydown="Enter(event)">
@@ -235,7 +243,7 @@
             <button class="close" onclick="sendEmail()">Send email</button>
     </div>
     <a href="whatsapp://send?phone=+355676732491">
-        <img src="whats.png" class="wapp">
+        <img src="/projekt1 img/whats.png" class="wapp">
     </a> 
     <div class="note" id="note"><p>You will receive an email to confirm the order</p>
     <p>Thank you for choosing us!</p>
@@ -264,9 +272,11 @@
             const cascoSelection = document.getElementById('siguracion').value;
             const crossBorder = document.getElementById('shteti').value;
             const additionalDrivers = parseInt(document.getElementById('additionalDrivers').value, 10);
+            const pickupLocation = document.getElementById('location').value;
             let cascoCost = 0;
             let borderCost = 0;
             let additionalDriverCost = 0;
+            let locationCost = 0;
         
             if (cascoSelection === '80') {
                 cascoCost = 10;
@@ -281,13 +291,19 @@
             if (additionalDrivers > 1) {
                 additionalDriverCost = (additionalDrivers - 1) * 3 * rentalDays;
             }
+
+            if (pickupLocation === 'Tirana') {
+                locationCost = 40;
+            } else if (pickupLocation === 'Saranda') {
+                locationCost = 200;
+            }
         
             let totalPrice = 0;
             if (rentalDays > 0) {
-                totalPrice = rentalDays * (selectedCarPrice + cascoCost) + borderCost + additionalDriverCost;
+                totalPrice = rentalDays * (selectedCarPrice + cascoCost) + borderCost + additionalDriverCost + locationCost;
             }
             
-            totalPriceElement.textContent = `${totalPrice} €`;
+            totalPriceElement.textContent = `Total Price: ${totalPrice} €`;
             return totalPrice;
         }
 
@@ -382,6 +398,7 @@
             const shteti = document.getElementById('shteti').value;
             const additionalDrivers = document.getElementById('additionalDrivers').value;
             const selectedCar = document.getElementById('selectedCar').value;
+            const pickupLocation = document.getElementById('location').value;
         
             const time1 = document.querySelector('.cal1:nth-child(1)').value;
             const time2 = document.querySelector('.cal1:nth-child(2)').value;
