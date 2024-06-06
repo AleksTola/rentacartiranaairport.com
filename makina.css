@@ -8,9 +8,9 @@ body{
         ); 
 }
 .vendi{
-    width: 70%;
-    float: inline-end;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .container{
     display: flex;
