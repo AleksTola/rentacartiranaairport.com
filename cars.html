@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="makina.css">
-    <link rel="icon" href="lambo.jfif">
+    <link rel="icon" href="=lambo.jfif">
     <link rel="stylesheet" href="media.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Choose a car</title>
@@ -102,18 +102,24 @@
             <select style="background-color: transparent; border: solid;
             border-color: black;
             color: black;
-            font-weight: bold;" id="location" onchange="updateTotalPrice()">
+            font-weight: bold;
+            height: 30px;" id="location" onchange="updateTotalPrice()">
                 <option value="Airport">Airport (Free)</option>
                 <option value="Tirana">Tirana downtown (40 €)</option>
                 <option value="Saranda">Saranda (200 €)</option>
-            </select>
-        </div>
-        </div>
+            </select><p>Will you pass the border?
+                <select style="margin-left: 15px; background-color: transparent;
+            border: solid; font-weight: bold;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
+            </div>
+            <p style="float: inline-end; width: 80%;">Every border pass has a 50 € charge.</p>
+            </div>
+        
+        
         <div class="makinat">
             <div class="mak-img">
                 <img src="golf5.jfif" class="golfat">
                 <div class="infot">
-                    <p class="emri-mak">Volkswagen Golf Mk5 or similar</p>
+                    <p class="emri-mak">Volkswagen Golf Mk5</p>
                     <li>Manual</li>
                     <li>5 Doors</li>
                     <li>4L/100Km</li>
@@ -128,7 +134,7 @@
             <div class="mak-img">
                 <img src="toyota.jfif" class="golfat">
                 <div class="infot1">
-                    <p class="emri-mak">Toyota Auris or similar</p>
+                    <p class="emri-mak">Toyota Auris</p>
                     <li>Manual</li>
                     <li>5 Doors</li>
                     <li>4L/100Km</li>
@@ -140,7 +146,7 @@
                 <div class="mak-img1">
                     <img src="audia3.jfif" class="golfat">
                     <div class="infot">
-                        <p class="emri-mak">Audi A3 or similar</p>
+                        <p class="emri-mak">Audi A3</p>
                         <li>Automatic</li>
                         <li>5 Doors</li>
                         <li>6L/100Km</li>
@@ -156,7 +162,7 @@
             <div class="mak-img">
                 <img src="audia4.jfif" class="golfat">
                 <div class="infot1">
-                    <p class="emri-mak">Audi A4 or similar</p>
+                    <p class="emri-mak">Audi A4</p>
                     <li>Automatic</li>
                     <li>5 Doors</li>
                     <li>8L/100Km</li>
@@ -168,7 +174,7 @@
                 <div class="mak-img1">
                     <img src="golf+.jpg" class="golfat">
                     <div class="infot">
-                        <p class="emri-mak">Golf Plus or similar</p>
+                        <p class="emri-mak">Golf Plus</p>
                         <li>Automatic</li>
                         <li>5 Doors</li>
                         <li>7L/100Km</li>
@@ -182,7 +188,7 @@
             <div class="mak-img">
                 <img src="golf7.jfif" class="golfat">
                 <div class="infot">
-                    <p class="emri-mak">Volkswagen Golf Mk6 or similar</p>
+                    <p class="emri-mak">Volkswagen Golf Mk6</p>
                     <li>Automatic</li>
                     <li>5 Doors</li>
                     <li>5L/100Km</li>
@@ -194,11 +200,6 @@
     </div>
     <div id="popup" class="popup">
         <div class="popup-content">
-            <h2 style="text-align: center; color: white;">Border passing</h2>
-            <p>Every border pass has a 50 € charge.</p>
-            <p>Will you pass the border?
-                <select style="margin-left: 15px; background-color: transparent;
-            border: solid; font-weight: bold;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
             <h2 style="text-align: center; color: white;">Drivers Number</h2>
             <p style="text-align: center;">Additional driver : 3€ / day per person</p>
             <center><select style="width: 150px; background-color: transparent;
@@ -278,9 +279,9 @@
             let additionalDriverCost = 0;
             let locationCost = 0;
         
-            if (cascoSelection === '80') {
+            if (cascoSelection === '80%') {
                 cascoCost = 10;
-            } else if (cascoSelection === '100') {
+            } else if (cascoSelection === '100%') {
                 cascoCost = 20;
             }
 
@@ -303,7 +304,7 @@
                 totalPrice = rentalDays * (selectedCarPrice + cascoCost) + borderCost + additionalDriverCost + locationCost;
             }
             
-            totalPriceElement.textContent = `Total Price: ${totalPrice} €`;
+            totalPriceElement.textContent = `${totalPrice} €`;
             return totalPrice;
         }
 
