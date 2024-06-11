@@ -111,7 +111,7 @@
         display: none;
     }
     div.tekst{
-        width: 100%;
+       display: none; 
     }
     div.terms{
         flex-direction: column;
