@@ -11,6 +11,9 @@
     input.emaili{
         height: 20px
     }
+    br.ndarja{
+    display:block;
+    }
     input.notes{
         margin-top: 10px;
         height: 30px
