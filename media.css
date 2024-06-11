@@ -113,9 +113,6 @@
     button.buton{
         display: none;
     }
-    div.tekst{
-       display: none; 
-    }
     div.terms{
         flex-direction: column;
        
