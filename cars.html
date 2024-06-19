@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="makina.css">
-    <link rel="icon" href="lamborgini.jpg">
+    <link rel="icon" type="image/jfif" href="lamborgini.jpg">
     <link rel="stylesheet" href="media.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Choose a car</title>
 </head>
-<body class="body1">
-    <div class="container1">
+<body>
+    <div class="container">
         <img src="lambo.jfif" class="titulli" />
         <div class="tit">Car Rental Tirana Airport</div>
         <div class="pages">
@@ -96,41 +96,40 @@
                     <option>22:00</option>
                     <option>23:00</option>
                 </select>
-                </div>
             </div>
-            <div class="vendi">
-            <select style="background-color: transparent; border: solid;
-            border-color: black;
-            color: black;
-            font-weight: bold;
-            height: 30px;" id="location" onchange="updateTotalPrice()">
-                <option value="Airport">Airport (Free)</option>
-                <option value="Tirana">Tirana downtown (40 €)</option>
-                <option value="Saranda">Saranda (200 €)</option>
-            </select><p>Will you pass the border?
-                <select style="margin-left: 15px; background-color: transparent;
-            border: solid; font-weight: bold;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
-            </div>
-            <p style="text-align: center; margin-top: 0px;">Every border pass has a 50 € charge.</p>
-            </div>
-        
-        
-        <div class="makinat">
-            <div class="mak-img">
-                <img src="golf5.jfif" class="golfat">
-                <div class="infot">
-                    <p class="emri-mak">Volkswagen Golf Mk5</p>
-                    <li>Manual</li>
-                    <li>5 Doors</li>
-                    <li>4L/100Km</li>
-                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf5')">Price: <strong id="golf5Price">25</strong> €</p></div>
-                    <p class="porosit1">Order now</p>
-                </div>
+        </div>
+        <div class="vendi">
+        <select style="background-color: transparent; border: solid;
+        border-color: black;
+        color: black;
+        font-weight: bold;
+        height: 30px;" id="location" onchange="updateTotalPrice()">
+            <option value="Airport">Airport (Free)</option>
+            <option value="Tirana">Tirana downtown (40 €)</option>
+            <option value="Saranda">Saranda (200 €)</option>
+        </select><p>Will you pass the border?
+            <select style="margin-left: 15px; background-color: transparent;
+        border: solid; font-weight: bold;" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></p>
+        </div>
+        <p style="text-align: center; margin-top: 0px;">Every border pass has a 50 € charge.</p>
+        </div>
+    <div class="makinat">
+        <div class="mak-img">
+            <img src="golf5.jfif" class="golfat">
+            <div class="infot">
+                <p class="emri-mak">Volkswagen Golf Mk5</p>
+                <li>Manual</li>
+                <li>5 Doors</li>
+                <li>4L/100Km</li>
+                <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="golf5Price"
+                onclick="showDiv('golf5')">Price: <strong>25</strong> €</p></div>
+                <p class="porosit1">Order now</p>
             </div>
         </div>
     </div>
-    <div class="caka">
-        <div class="makinat1">
+</div>
+<div class="caka">
+    <div class="makinat1">
             <div class="mak-img">
                 <img src="toyota.jfif" class="golfat">
                 <div class="infot1">
@@ -138,7 +137,8 @@
                     <li>Manual</li>
                     <li>5 Doors</li>
                     <li>4L/100Km</li>
-                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('toyota')">Price: <strong id="toyotaPrice">25</strong> €</p></div>
+                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="toyotaPrice"
+                    onclick="showDiv('toyota')">Price: <strong>25</strong> €</p></div>
                     <p class="porosit">Order now</p>
                 </div>
             </div>
@@ -150,7 +150,8 @@
                         <li>Automatic</li>
                         <li>5 Doors</li>
                         <li>6L/100Km</li>
-                        <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('A3')">Price: <strong id="A3Price">30</strong> €</p></div>
+                        <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="A3Price"
+                        onclick="showDiv('A3')">Price: <strong>30</strong> €</p></div>
                         <p class="porosit">Order now</p>
                     </div>
                 </div>
@@ -166,7 +167,8 @@
                     <li>Automatic</li>
                     <li>5 Doors</li>
                     <li>8L/100Km</li>
-                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('A4')">Price: <strong id="A4Price">50</strong> €</p></div>
+                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="A4Price"
+                    onclick="showDiv('A4')">Price: <strong>50</strong> €</p></div>
                     <p class="porosit">Order now</p>
                 </div>
             </div>
@@ -178,7 +180,8 @@
                         <li>Automatic</li>
                         <li>5 Doors</li>
                         <li>7L/100Km</li>
-                        <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf+')">Price: <strong id="golf+Price">30</strong> €</p></div>
+                        <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="golf+Price"
+                        onclick="showDiv('golf+')">Price: <strong>30</strong> €</p></div>
                         <p class="porosit">Order now</p>
                     </div>
                 </div>
@@ -192,7 +195,8 @@
                     <li>Automatic</li>
                     <li>5 Doors</li>
                     <li>5L/100Km</li>
-                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" onclick="showDiv('golf6')">Price: <strong id="golf6Price">30</strong> €</p></div>
+                    <input type="hidden" id="selectedCar" name="selectedCar"><div class="bord"><p class="leku" id="golf6Price"
+                    onclick="showDiv('golf6')">Price: <strong>30</strong> €</p></div>
                     <p class="porosit1">Order now</p>
                 </div>
             </div>
@@ -279,9 +283,9 @@
             let additionalDriverCost = 0;
             let locationCost = 0;
         
-            if (cascoSelection === '80%') {
+            if (cascoSelection === '80') {
                 cascoCost = 10;
-            } else if (cascoSelection === '100%') {
+            } else if (cascoSelection === '100') {
                 cascoCost = 20;
             }
 
@@ -301,7 +305,8 @@
         
             let totalPrice = 0;
             if (rentalDays > 0) {
-                totalPrice = rentalDays * (selectedCarPrice + cascoCost) + borderCost + additionalDriverCost + locationCost;
+                let extraCharge = isJulyOrAugust(startDate, endDate) ? 20 : 0;
+                totalPrice = rentalDays * (selectedCarPrice + cascoCost + extraCharge) + borderCost + additionalDriverCost + locationCost;
             }
             
             totalPriceElement.textContent = `${totalPrice} €`;
@@ -315,6 +320,27 @@
                 return diffDays + 1; // Include both start and end date
             }
             return 0;
+        }
+
+        function isJulyOrAugust(start, end) {
+            const july = 6; // Month index for July
+            const august = 7; // Month index for August
+
+            const isStartInJulyOrAugust = start.getMonth() === july || start.getMonth() === august;
+            const isEndInJulyOrAugust = end.getMonth() === july || end.getMonth() === august;
+
+            return isStartInJulyOrAugust || isEndInJulyOrAugust;
+        }
+
+        function updateCarPrices() {
+            const extraCharge = isJulyOrAugust(startDate, endDate) ? 20 : 0;
+
+            for (let car in carPrices) {
+                const priceElement = document.getElementById(`${car}Price`);
+                const basePrice = carPrices[car];
+                const newPrice = basePrice + extraCharge;
+                priceElement.innerHTML = `Price: <strong>${newPrice}</strong> €`;
+            }
         }
         
         document.addEventListener('DOMContentLoaded', function() {
@@ -354,6 +380,7 @@
                     endDate = date;
                     showDatesElement.textContent += ` - ${endDate.toLocaleDateString()}`;
                     calendarContainer.style.display = 'none';
+                    updateCarPrices(); // Update car prices when end date is selected
                     updateTotalPrice(); // Update total price after selecting the end date
                 } else {
                     startDate = date;
@@ -444,7 +471,7 @@
                 message: "Emaili i porositesit nga: " + emaili +
                 ".     " + "Notes: " + notes + ".        " + selectedDates + " " + time1 + " - " + time2 +
                 "     Siguracioni: " + siguracion + "   " +  "Jasht shteti : " + shteti +
-                 ".   Numri i Shoferave: " + additionalDrivers + ".    Lloji makines: " + selectedCar + ".    Cmimi Total: " + totalPrice + "€"
+                 ".   Numri i Shoferave: " + additionalDrivers + ".    Lloji makines: " + selectedCar +".  Vendi:" + pickupLocation + ".    Cmimi Total: " + totalPrice + "€"
             };
         
             emailjs.send("service_pr32msp", "template_m9f5r4q", emailData)
