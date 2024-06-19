@@ -1,20 +1,9 @@
 body{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(
-            to right,
-            #19374a, 
-            #f5f8fa
-        ); 
+    background: white;
 }
-.vendi{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.ndarja{
-    display: none;
-}
+
 .container{
     display: flex;
     align-items: center;
@@ -29,10 +18,10 @@ body{
     left: 10px;
     background-color: white;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10000;
 }
 .container1{
-    width: 100%;
+    width: 98%;
     display: flex;
     align-items: center;
     min-height: 60px;
@@ -51,7 +40,7 @@ body{
     left: 10px;
     background-color: white;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1;
 }
 .titulli{
     width: 200px;
@@ -82,7 +71,7 @@ body{
     color: rgb(136, 7, 7);
 }
 .background{
-    background-image: url(audi.jpg);
+    background-image: url(/projekt1\ img/audi.jpg);
     background-size: 50% 110%;
     background-repeat: no-repeat;
     height: 500px;
@@ -90,15 +79,8 @@ body{
     box-shadow: 10px 10px 15px black;
     margin-top: 130px;
 }
-.body1{
-    background: linear-gradient(
-            to right,
-            #19374a, 
-            #f5f8fa
-        ); 
-}
 .background1{
-    background-image: url(benz.jfif);
+    background-image: url(/projekt1\ img/benz.jfif);
     background-repeat: no-repeat;
     background-size: 50% 100%;
 }
@@ -463,8 +445,6 @@ option{
     background-color: transparent;
     border: solid;
     display: inline-block;
-    border-color: black;
-    color: black;
 }
 .bord{
     color: black;
@@ -546,7 +526,7 @@ option{
     margin-top: 20px;
     margin: 25px;
     width: 30%;
-    border: none;
+    border: solid;
     border-radius: 20px;
 }
 .plus{
@@ -555,9 +535,14 @@ option{
     background-color: green;
     transition: 0.5s;
 }
+.vendi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .notes{
     margin-top: 20px;
-    height: 40px;
+    height: 50px;
 }
 input{
     border-radius: 5px;
@@ -570,13 +555,13 @@ input{
 }
 .emaili{
     margin-top: 12px;
-    height: 20px;
+    height: 25px;
 }
 .emri{
-    height: 20px;
+    height: 25px;
 }
 .mbiemri{
-    height: 20px;
+    height: 25px;
     margin-top: 12px;
 }
 
