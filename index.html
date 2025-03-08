@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a car Tirana Airport</title>
+    <link rel="icon" href="pic/lamborgini.jpg" type="image/png">
+    <link rel="stylesheet" href="/style.css/makinarwork.css">
+</head>
+<body >
+    <section class="shpi">
+    <div class="first-cont">
+        <img src="pic/lambo.jfif" class="lambo">
+        <p class="d">Car Rental Tirana Airport</p>
+        <button class="home" onclick="scrollToSection('shpi')">Home</button>
+        <button class="cars" onclick="scrollToSection('makinat')">Cars</button>
+        <button class="contact" onclick="scrollToSection('third-sec')">Contact Us</button>
+</div>
+    <div class="first">
+        <div class="hapje">
+            <p class="bind">Fast & Secure, Make the right choice!</p>
+            <p class="txt">A good car means a good holiday to remember.</p>
+            <p id="sec" class="txt">Explore every part of Albania with our cars!</p>
+            <img src="pic/holiday-road-trip.jpg" class="pushime">
+        </div><br class="i">
+        <div class="second-cont">
+            <div class="about">
+                <p class="ab-text">About us</p>
+                <p class="parag1">Car Rental Tirana Airport has been offering cars since 2018. Located at Rinas International Albanian Airport,
+                    we are here to ease and make your holidays enjoyable!</p> <hr class="line">
+                <p class="pick">Pick up & Drop off location</p>
+                    <li class="parag">Order a car from the website and the car will be waiting for you right outside the Airport.</li>
+                    <li class="parag">After the drop off our team will drive you to the Airport for free!</li><br class="diss">
+            </div>
+        </div><br>
+    </div>
+</section>
+<section class="makinat">
+    <div class="third-container">
+        <p class="take">Choose a car</p>
+        <div class="zgj">
+            <div class="datat">
+                <h1 style="margin: 0;">Select the dates</h1>
+                <p style="color:lightgray; margin: 5px;">The Pick Up Location is right outside the Airport</p>
+                <h3 style="margin: 0;">Period of Rental</h3>
+                <div class="cal" onclick="toggleCalendar()">
+                    <p class="show" id="show">Dates</p>
+                    <div class="border"></div>
+                </div>
+                <div class="calendar-container" id="calendarContainer">
+                    <div class="calendar-header">
+                        <div id="prevMonth">&lt;</div>
+                        <div id="currentMonth"></div>
+                        <div id="nextMonth">&gt;</div>
+                    </div>
+                    <div id="calendar"></div>
+                </div>
+                <div class="oret">
+                    <a>Pick up time</a><a>Drop off time</a>
+                </div>
+                <div class="cal-cont">
+                    <select class="cal1" id="pickUpTime">
+                        <option>00:00</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                    </select>
+                    <select class="cal1" id="dropOffTime">
+                        <option>00:00</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                    </select>
+                </div>
+                <div class="vendi">
+                    <select class="air" id="location" onchange="updateTotalPrice()">
+                        <option value="Airport">Airport (Free)</option>
+                        <option value="Tirana">Tirana downtown (40 €)</option>
+                        <option value="Saranda">Saranda (200 €)</option>
+                    </select><a style="font-weight: bold; flex-shrink: 5;">Will you pass the border?
+                        <select class="yes" id="shteti" onchange="updateTotalPrice()"><option value="no">No</option><option value="yes">Yes</option></select></a>
+                    </div>
+                    <a style="font-weight: bolder; color: rgb(255, 49, 49);" id="alek">Every border pass has a 50€ charge.</a>
+                    <a class="shoferat">Additional Drivers (3€ / day per extra person)</a>
+                    <select style="width: 150px; border: none; text-align: center;" 
+                        id="additionalDrivers" onchange="updateTotalPrice()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </select>
+                    <h2 style="margin: 0;">Insurance</h2>
+                    <li class="je">With Normal Insurance you have to pay a 300 € fine for every damage on the car.</li>
+                    <li class="je">With 80% Casco you are mostly covered,
+                        you only pay 20% of the damage of the car.
+                        <strong style="font-weight: bold; color: rgb(100, 228, 100);">+10 €/day</strong></li>
+                    <li class="je">With 100% Casco gives you full coverage, every damage your car might cause but it doesn't cover damaged
+                         tires and driving off-road. <strong style="font-weight: bold; color: rgb(100, 228, 100);">+20 €/day</strong></li>
+                         <select class="siguracion" id="siguracion" name="siguracion" onchange="updateTotalPrice()">
+                            <option value="normal">Normal</option>
+                            <option value="80">80% Casco</option>
+                            <option value="100">100% Casco</option>
+                        </select>
+                        <div class="order">
+                        <h1>Total Price: <strong id="totalPrice" style="color:rgb(100, 228, 100);"></strong></h1>
+                        <input placeholder="Name" class="emri" id="emri" name="emri" onkeydown="Enter(event)">
+                        <input placeholder="Surname" class="mbiemri" id="mbiemri" name="mbiemri" onkeydown="Enter(event)">
+                        <input placeholder="Email" class="emaili" id="emaili" name="emaili" onkeydown="Enter(event)">
+                        <input placeholder="Notes" class="notes" id="notes" name="notes" onkeydown="Enter(event)">
+                        <button class="close" onclick="sendEmail()">Send email</button>
+                    </div>
+                </div>
+                <div class="car-sec">
+                    <div class="golfi">
+            <img src="/pic/IMG_3841.jpeg.800x800_q85_crop-scale.jpg.webp" class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10; text-align: center;">Volkswagen Golf Mk5</h1>
+                    <li>Manual</li>
+                    <li>4 Doors</li>
+                    <li>4L/100km</li>
+                    <input type="hidden"  id="selectedCar" name="selectedCar">
+                    <button class="cmimi" id="golf5Price" 
+                    onclick="showDiv('golf5')">Price: 25 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+            <div class="golfi">
+                <img src="/pic/toyota.jpg" class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10;  text-align: center">Toyota Auris</h1>
+                    <li>Manual</li>
+                    <li>4 Doors</li>
+                    <li>4L/100km</li>
+                    <input type="hidden" id="selectedCar" name="selectedCar">
+                    <button class="cmimi" id="toyotaPrice"
+                  onclick="showDiv('toyota')">Price: 25 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+            <div class="golfi">
+                <img src="/pic/audia3.jpg" class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10;  text-align: center">Audi A3</h1>
+                    <li>Automatic</li>
+                    <li>4 Doors</li>
+                    <li>6L/100km</li>
+                    <input type="hidden" id="selectedCar" name="selectedCar">
+                  <button class="cmimi" id="A3Price"
+                  onclick="showDiv('A3')">Price: 30 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+            <div class="golfi">
+                <img src="/pic/audia4.jpg" class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10;  text-align: center">Audi A4</h1>
+                    <li>Automatic</li>
+                    <li>4 Doors</li>
+                    <li>8L/100km</li>
+                    <input type="hidden" id="selectedCar" name="selectedCar">
+                  <button class="cmimi"  id="A4Price"
+                  onclick="showDiv('A4')">Price: 45 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+            <div class="golfi">
+                <img src="/pic/golf+.jpg" class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10; text-align: center">Golf Plus</h1>
+                    <li>Automatic</li>
+                    <li>4 Doors</li>
+                    <li>7L/100km</li>
+                    <input type="hidden" id="selectedCar" name="selectedCar">
+                  <button class="cmimi" id="golf+Price"
+                  onclick="showDiv('golf+')">Price: 30 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+            <div class="golfi">
+                <img src="/pic/golf7.jpg " class="golf5">
+            <div class="infot">
+                <h1 style="margin: 10; text-align: center">Volkswagen Golf Mk6</h1>
+                    <li>Automatic</li>
+                    <li>4 Doors</li>
+                    <li>5L/100km</li>
+                    <input type="hidden" id="selectedCar" name="selectedCar">
+                  <button class="cmimi" id="golf6Price"
+                  onclick="showDiv('golf6')">Price: 30 €/day</button><a style="margin-left: 15px;">Order now</a>
+                </div>
+            </div>
+        <br class="i">
+    </div>
+    </div>
+</section>
+<section class="third-sec">
+    <div class="fourth-container">
+        <div class="f4-all">
+            <div class="terms">
+                <p class="ter">Terms & Conditions</p>
+                    <p class="a"><strong class="tick">✔</strong> The car can be taken is 3+ days.</p>
+                    <p class="a"><strong class="tick">✔</strong> Each car is equipped with GPS.</p>
+                    <p class="a"><strong class="tick">✔</strong> Unlimited KM.</p>
+                    <p class="a"><strong class="tick">✔</strong> Pay extra € to be safe from paying accidents.</p>
+                    <p class="a"><strong class="tick">✔</strong> Payment can be made by card and by cash.</p>
+                    <p class="a"><strong class="tick">✔</strong> You can order a car from anywhere in Albania.</p>            
+            </div>
+            <div>
+                <p class="contact1">Contact Us</p>
+                <p class="a"><img src="/pic/360_F_228296726_lf2QbwmEVCjhBEpoiKfTENnm4YsC0uBc.jpg" style="width: 50px; border-radius: 15px;">+355 67 673 2491</p>
+                <p class="a"><img src="/pic/download.png" alt="email"  style="width: 50px; border-radius: 15px;">rentacartiranaairport1@gmail.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5982.537766307199!2d19.703994!3d41.433387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502d74b134ec4b%3A0xf40828cb19d0ce8d!2sRent%20a%20Car%20Tirana%20Airport!5e0!3m2!1sen!2sus!4v1717165834204!5m2!1sen!2sus" 
+            class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> 
+        <img src="/pic/whats.png" class="wapp">
+        <a class="me">Website created by 0682405123</a> 
+    </div>
+</section>
+<script src="/java.js/javarework.js">
+        (function(){
+        emailjs.init("N6ErUOxpRCQ6rHaao");
+    })();
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</html>
