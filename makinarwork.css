@@ -1,0 +1,603 @@
+        @media screen and (max-width: 1294px){
+            div.vendi{
+                flex-direction: column;
+                gap: 10px;
+            }
+            a#alek{
+                text-align: center;
+            }
+            div.order{
+                width: fit-content;
+            }
+            div.order{
+                padding: 12%;
+            }
+        }
+        @media screen and (max-width: 827px){
+        .d{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 800px){
+       br.i{
+        display: block;
+       }
+       div.second-cont{
+        padding: 5%;
+       }
+       div.about{
+        height: fit-content;
+        padding: 0;
+       }
+       br.diss{
+        display: none;
+       }
+       p.ab-text{
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
+       }
+       hr.line{
+        margin: 3px;
+       }
+       p.parag1{
+        font-size: 12px;
+        margin: 5px;
+       }
+       li.parag{
+        font-size: 12px;
+        margin: 5px;
+       }
+       p.pick{
+        margin: 5px;
+        font-size: 20px;
+       }
+       div.first{
+        display: block;
+        height: fit-content;
+       }
+       div.zgj{
+        display: block;
+       }
+       div.datat{
+        width: 98%;
+        }
+        div.car-sec{
+            margin-top: 30px;
+            align-items: center;
+        }
+        div.order{
+            width: 350px;
+        }
+
+  
+    }
+    @media screen and (max-width: 703px){
+        div.f4-all{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+        @media screen and (min-width: 250px ) and (max-width: 555px){
+            img.pushime{
+                width: 85%;
+                max-width: 400px;
+                padding: 5%;
+                border-radius: 45px;
+                height: 200px;
+            }    p.ab-text, p.pick{
+                font-size: 12px;
+                margin: 0;
+            }
+            p.parag1, li.parag{
+                font-size: 10px;
+                line-height: 19px;
+                margin: 0;
+            }
+            button.home, button.cars, button.contact{
+                width: fit-content;
+            }
+            div.golfi{
+                flex-direction: column;
+                gap: 0px;
+                align-items: center;
+            }
+            div.vendi{
+                flex-direction: column;
+                gap: 10px;
+            }
+            div.order{
+                width: 40%;
+            }
+            img.golf5{
+                width: 90%;
+            }
+            div.third-container{
+                margin-top: 10px;
+            }
+        }
+
+        .wapp{
+            width: 70px;
+            position: fixed;
+            bottom: 3.5%;
+            right: 20px;
+            z-index: 100000;
+        }
+        .wapp:hover{
+            opacity: 0.85;
+            cursor: pointer;
+        }
+        .wapp.active{
+            opacity: 0.5;
+        }
+
+    .map{
+        height: 200px;
+    }
+    .i{
+        display: none;
+    }
+   
+    section{
+        scroll-snap-align: start;
+        scroll-margin-top: 100px;
+    }
+    .d{
+        font-size: 2vw;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        font-family:'Courier New', Courier, monospace;
+        margin: 0;
+        flex: 0.9;
+        flex-shrink: 1;
+    }
+    .first-cont{
+        background-color: white;
+        width: 99%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid gray;
+        box-shadow: 10px 10px 10px gray;
+        height: 80px;
+        position: fixed;
+        top: 0;
+    }
+    .home, .cars, .contact{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 8px;
+        width: 100px;
+        height: 45px;
+        flex-shrink: 2;
+    }
+    .home:hover, .cars:hover, .contact:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .home:active, .cars:active, .contact:active{
+        opacity: 0.5;
+    }
+    .lambo{
+        min-width: 100px;
+        width:200px;
+        flex-shrink: 1;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    .first{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        box-shadow: 10px 10px 10px black;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        height: fit-content;
+
+    }
+    .hapje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0.6;
+        margin-top: 100px;
+    }
+    .bind{
+        font-size: 50px;
+        font-weight: bolder;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 10px;
+        flex-shrink: 1;
+        text-align: center;
+    }
+    .txt{
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        flex-shrink: 1;
+    } 
+    #sec{
+        margin: 5px 0px 15px 0px;
+        font-size: 23px;
+    }
+    .pushime{
+        min-height: 100px;
+        height: 250px;
+        min-width: 200px;
+        width: 500px;
+        border-radius: 15px;
+        margin: 10px;
+        flex-shrink: 5;
+    }
+    .second-cont{
+        background-image: url("/pic/pexels-photo-164634.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: 10%; 
+        height: 40vw;
+        flex-shrink: 1;
+        border-radius: 15px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .about{
+        background-color: lightgray;
+        border-radius: 15px;
+        border-style: solid;
+        max-width: 500px;    
+        line-height: 30px;
+        word-spacing: 3px;
+    }
+    .ab-text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:25px;
+        font-weight: bolder;
+        margin: 25px 0px 15px 0px;
+        text-align: center;
+        }
+        .parag1{
+        font-size: 15px;
+        text-align: center;
+        margin: 0px 15px 15px 15px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .line{
+        border: solid;
+        border-width: 1.5px;
+        width: 100%;
+        border-color: gray;
+        }
+
+        .parag{
+
+        font-size: 15px;
+        text-align: center;
+        margin: 0px 15px 0px 15px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .pick{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin: 15px;
+        font-weight: bolder;
+        text-align: center;
+        }
+        .third-container{
+        background-color: rgb(32, 32, 32);
+        border-radius: 15px;
+        margin-top: 50px;
+        color: white;
+        }
+        .datat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 25%;
+        }
+        .cal{
+        min-width: fit-content;
+        width: 75%;
+        height: 40px;
+
+        border-radius: 7px;
+        border: solid;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        }
+        .show{
+        margin-left: 5px;
+        font-size: 17px;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        }
+        #show{
+        margin: 0;
+        }
+        .border{
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        margin:0px 10px 5px 0px;
+        width: 9.5px;
+        height: 9px;
+        transform: rotate( 42.5deg );
+        cursor: pointer;
+        }
+        .calendar-container {
+        width: 310px;
+        font-family: Arial, sans-serif;
+        display: none;
+        }
+        .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(132, 16, 16);
+        height: 30px;
+        margin-top: 15px;
+        }
+        #calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        border-collapse: collapse;
+        }
+        #prevMonth{
+        font-weight: bolder;
+        cursor: pointer;
+        margin-left: 5px;
+        }
+        #nextMonth{
+        font-weight: bolder;
+        cursor: pointer;
+        margin-right: 5px;
+        }
+        #calendar div {
+            border: 1px solid #ccc;
+            padding: 3.5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #calendar div:hover{
+            opacity: 0.7;
+        }
+
+        #calendar .day-header {
+        font-weight: bold;
+        }
+        .oret{
+        display: flex;
+        gap: 50px;
+        }
+        .cal-cont{
+        display: flex;
+        gap: 50px;
+
+        }
+        .cal1{
+        border: none;
+        border-radius: 15px;
+        width: 80px;
+        text-align: center;
+        font-weight: bold;
+        height: 20px;
+        }
+        .cal1:hover{
+        cursor: pointer;
+        }
+        .air{
+        border: none;
+        font-weight: bolder;
+        height: 30px;
+        }
+        .air:hover{
+        cursor: pointer;
+        }
+        .vendi{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        }
+        .yes{
+        margin-left: 15px;
+        font-weight: bold;
+        }
+        .yes:hover{
+        cursor: pointer;
+        }
+        .shoferat{
+        font-weight: bold;
+        }
+        .take{
+        font-size: 35px;
+        font-weight: bolder;
+        padding: 10px;
+        text-align: center;
+        }
+        .zgj{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-evenly;    
+        }
+        .car-sec{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-shrink: 4;
+        margin-bottom: 25px;
+        }
+        .golfi{
+        display: flex;
+        gap: 30px;
+        }
+        .golf5{
+        min-width: 150px;
+        width: 300px;
+        border-radius: 15px;
+        max-height: 220px;
+        flex-shrink: 5;
+        }
+        .infot{
+        line-height: 30px;
+        align-content: center;
+        flex: 1;
+        }
+        .siguracion{
+        width: 150px;
+        height: 25px;
+        text-align: center;
+        font-weight: bold;
+        }
+        .siguracion:hover{
+        cursor: pointer;
+        }
+        li{
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .je{
+        font-size: 16px;
+        text-align: center;
+        }
+        .cmimi{
+        width: fit-content;
+        height: 25px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+        margin: 10px 0px 0px 10px;
+        align-self: end;
+        background-color: darkgray;
+        }
+        .cmimi:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        }
+        .emri, .mbiemri, .emaili{
+        text-align:center;
+        color: black;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 15px;
+        border: solid;
+        }
+        .notes{
+        text-align:center;
+        color: black;
+        width: 175px;
+        height: 50px;
+        border-radius: 15px;
+        border: solid;
+        font-size: 10px;
+        }
+        .notes::placeholder{
+        font-size: 15px;
+        }
+        .close{
+            width: 150px;
+            height: 35px;
+            font-weight: bolder;
+            background-color: lightgray;   
+            margin: 10px;
+            align-self: flex-end;
+        }
+        .close:hover{
+            background-color: green;
+            color: black;
+            font-size: 14px;
+            transition: 0.4s;
+            cursor: pointer;
+
+        }
+        .close:active{
+            opacity: 0.5;
+            transition: -3s;
+        }
+        .order{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: solid;
+            background-image: linear-gradient(to right, black, white);
+    
+            width: 500px;
+            min-width: fit-content;
+            border-radius: 15px;
+            flex-shrink: 10;
+        }
+        .fourth-container{
+            background-color: rgb(32, 32, 32);
+            border-radius: 15px;
+            margin-top: 20px;
+            color: white;
+        }
+        .f4-all{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .terms{
+            display: flex;
+            flex-direction: column;
+        }
+        .tick{
+            color: green;
+            margin-right: 5px;
+            font-size: 25px;
+            vertical-align: middle;
+        }
+        .a{
+            font-size: 17px;
+            font-weight:500;
+            line-height: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .ter{
+            text-align: center;
+            font-style: italic;
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 20px 0px 0px 20px;
+            margin: 0px 0px 30px 0px;
+        }
+        .contact1{
+            text-align: center;
+            font-style: italic;
+            font-size: 30px;
+            font-size: 25px;
+            font-weight: bolder;
+            padding: 20px 0px 0px 20px;
+            margin: 0;
+        }
+        .map{
+            flex-shrink: 2;
+            height: 200px;
+        }
+        .me{
+
+            font-style: italic;
+            float: right;
+            color: black;
+            font-weight: bold;
+        }
+        
